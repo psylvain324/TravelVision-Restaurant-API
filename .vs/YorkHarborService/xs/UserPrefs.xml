@@ -1,33 +1,23 @@
 ﻿<Properties StartupConfiguration="{C35B33C9-1B9D-4022-8C7D-1750902AEF62}|Default">
-  <MonoDevelop.Ide.ItemProperties.YorkHarborService PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="YorkHarborService/Services/SqlEmployeeRepository.cs">
+  <MonoDevelop.Ide.ItemProperties.YorkHarborService PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="YorkHarborService/Data/YorkHarborServiceDbContext.cs">
     <Files>
       <File FileName="YorkHarborService/Services/SqlEmployeeRepository.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Services/SqlReviewRepository.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Data/YorkHarborServiceDbContext.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Controllers/EmployeeController.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Controllers/EmployeesController.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Controllers/ReviewsController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="YorkHarborService" expanded="True">
-            <Node name="YorkHarborService" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="SqlEmployeeRepository.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="YorkHarborService" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.YorkHarborCms FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

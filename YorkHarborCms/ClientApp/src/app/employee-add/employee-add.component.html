@@ -1,0 +1,34 @@
+<app-top-bar></app-top-bar>
+
+<form name="addEmployeeForm" ng-controller="EmployeeController">
+    <label>First Name:
+      <input type="text" name="input" ng-model="employee.text"
+             ng-pattern="employee.word" required ng-trim="false">
+    </label>
+    <div role="alert">
+      <span class="error" ng-show="myForm.input.$error.required">
+        This is a required field!</span>
+      <span class="error" ng-show="myForm.input.$error.pattern">
+        Enter a valid first name!</span>
+    </div>
+    <label>Last Name:
+        <input type="text" name="input" ng-model="employee.text"
+               ng-pattern="employee.word" required ng-trim="false">
+      </label>
+      <div role="alert">
+        <span class="error" ng-show="myForm.input.$error.required">
+          This is a required field!</span>
+        <span class="error" ng-show="myForm.input.$error.pattern">
+          Enter a valid last name!</span>
+      </div>
+      <label>State
+        <app-dropdown formControlName="type" [options]="states" [placeholder]="captureData.type" [isReadOnly]="isReadOnly">
+        </app-dropdown>
+      </label>
+      <div role="alert">
+        <span class="error" ng-show="myForm.input.$error.required">
+          This is a required field!</span>
+      </div>
+</form>
+
+<a [routerLink]="['/add']" class="button fancy-button"><i class="material-icons"logout></i>Add</a>

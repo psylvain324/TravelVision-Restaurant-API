@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Phil/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj": {}
+    "/Users/Phil/Desktop/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj": {}
   },
   "projects": {
-    "/Users/Phil/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj": {
+    "/Users/Phil/Desktop/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Phil/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj",
+        "projectUniqueName": "/Users/Phil/Desktop/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj",
         "projectName": "YorkHarborService",
-        "projectPath": "/Users/Phil/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj",
+        "projectPath": "/Users/Phil/Desktop/Projects/YorkHarborService/YorkHarborService/YorkHarborService.csproj",
         "packagesPath": "/Users/Phil/.nuget/packages/",
-        "outputPath": "/Users/Phil/Projects/YorkHarborService/YorkHarborService/obj/",
+        "outputPath": "/Users/Phil/Desktop/Projects/YorkHarborService/YorkHarborService/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -42,29 +42,36 @@
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.1, )",
+              "version": "[2.2.7, )",
               "autoReferenced": true
             },
             "Microsoft.AspNetCore.Razor.Design": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.2, )"
+              "version": "[2.2.0, )"
             },
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
-            "Swashbuckle": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[5.6.0, )"
+              "version": "[12.0.2, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

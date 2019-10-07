@@ -15,7 +15,7 @@ namespace YorkHarborService.Models
         [DataType(DataType.MultilineText)]
         public string serviceDescription;
 
-        [Required(ErrorMessage = "Description of Food Quality is required.")]
+        [Required(ErrorMessage = "Description of Food Quality is required.")]
         [DataType(DataType.MultilineText)]
         public string foodDescription;
 

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YorkHarborService", "YorkHarborService\YorkHarborService.csproj", "{C35B33C9-1B9D-4022-8C7D-1750902AEF62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YorkHarborCms", "YorkHarborCms\YorkHarborCms.csproj", "{13630FEC-FE9D-4F96-8BD3-18D2CA91089D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{C35B33C9-1B9D-4022-8C7D-1750902AEF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C35B33C9-1B9D-4022-8C7D-1750902AEF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C35B33C9-1B9D-4022-8C7D-1750902AEF62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13630FEC-FE9D-4F96-8BD3-18D2CA91089D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13630FEC-FE9D-4F96-8BD3-18D2CA91089D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13630FEC-FE9D-4F96-8BD3-18D2CA91089D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13630FEC-FE9D-4F96-8BD3-18D2CA91089D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
