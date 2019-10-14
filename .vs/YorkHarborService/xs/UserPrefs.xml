@@ -1,18 +1,30 @@
 ﻿<Properties StartupConfiguration="{C35B33C9-1B9D-4022-8C7D-1750902AEF62}|Default">
   <MonoDevelop.Ide.ItemProperties.YorkHarborService PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="YorkHarborService/Data/YorkHarborServiceDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="YorkHarborService/Services/SqlEmployeeRepository.cs">
     <Files>
       <File FileName="YorkHarborService/Services/SqlEmployeeRepository.cs" Line="1" Column="1" />
-      <File FileName="YorkHarborService/Services/SqlReviewRepository.cs" Line="1" Column="1" />
-      <File FileName="YorkHarborService/Data/YorkHarborServiceDbContext.cs" Line="1" Column="1" />
-      <File FileName="YorkHarborService/Controllers/EmployeeController.cs" Line="1" Column="1" />
-      <File FileName="YorkHarborService/Controllers/EmployeesController.cs" Line="1" Column="1" />
-      <File FileName="YorkHarborService/Controllers/ReviewsController.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Services/SqlReviewRepository.cs" />
+      <File FileName="YorkHarborService/Data/YorkHarborServiceDbContext.cs" />
+      <File FileName="YorkHarborService/Controllers/EmployeeController.cs" />
+      <File FileName="YorkHarborService/Controllers/ReviewsController.cs" />
+      <File FileName="YorkHarborService/Models/Employee.cs" />
+      <File FileName="YorkHarborService/Views/Home/About.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="YorkHarborService" expanded="True" selected="True" />
+          <Node name="YorkHarborService" expanded="True">
+            <Node name="YorkHarborCms" expanded="True" />
+            <Node name="YorkHarborService" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
