@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.OpenApi.Models;
 
 namespace YorkHarborService
 {
@@ -31,18 +30,33 @@ namespace YorkHarborService
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            /* Swagger
             services.AddMvc();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info
+                c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Test API",
-                    Description = "ASP.NET Core Web API"
+                    Title = "York Harbor API",
+                    Description = "ASP.NET Core Component to York Harbor Mobile",
+                    TermsOfService = new Uri("https://travel-vision.com/terms"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Phillip Sylvain",
+                        Email = "psylvain324@travelvision.com",
+                        Url = new Uri("https://www.linkedin.com/in/philsylvain"),
+                    },
+                    License = new OpenApiLicense
+                    {
+                        Name = "Use under LICX",
+                        Url = new Uri("https://travel-vision.com/license"),
+                    }
                 });
+
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
-            */
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -76,13 +90,17 @@ namespace YorkHarborService
                 app.UseDeveloperExceptionPage();
             }
 
-            /* Swagger
-            app.UseMvc();
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
-            app.UseSwaggerUI(c => {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Test API V1");
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.),
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "York Harbor API V1");
+                c.RoutePrefix = string.Empty;
             });
-            */
         }
+
     }
 }

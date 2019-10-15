@@ -1,35 +1,37 @@
-﻿<Properties StartupConfiguration="{C35B33C9-1B9D-4022-8C7D-1750902AEF62}|Default">
+﻿<Properties StartupConfiguration="{C35B33C9-1B9D-4022-8C7D-1750902AEF62}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.ItemProperties.YorkHarborService PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="YorkHarborService/Services/SqlEmployeeRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="YorkHarborService/Startup.cs">
     <Files>
       <File FileName="YorkHarborService/Services/SqlEmployeeRepository.cs" Line="1" Column="1" />
       <File FileName="YorkHarborService/Services/SqlReviewRepository.cs" />
       <File FileName="YorkHarborService/Data/YorkHarborServiceDbContext.cs" />
       <File FileName="YorkHarborService/Controllers/EmployeeController.cs" />
-      <File FileName="YorkHarborService/Controllers/ReviewsController.cs" />
-      <File FileName="YorkHarborService/Models/Employee.cs" />
-      <File FileName="YorkHarborService/Views/Home/About.cshtml" />
+      <File FileName="YorkHarborService/Controllers/ReviewsController.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Models/Employee.cs" Line="10" Column="1" />
+      <File FileName="YorkHarborService/Views/Home/About.cshtml" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Models/Review.cs" Line="31" Column="55" />
+      <File FileName="YorkHarborService/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="YorkHarborCms/Program.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborCms/Startup.cs" Line="1" Column="1" />
+      <File FileName="YorkHarborCms/appsettings.json" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Startup.cs" Line="39" Column="68" />
+      <File FileName="YorkHarborService/YorkHarborService.csproj" Line="75" Column="1" />
+      <File FileName="YorkHarborService/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="YorkHarborService/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="YorkHarborService/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="YorkHarborService" expanded="True">
-            <Node name="YorkHarborCms" expanded="True" />
             <Node name="YorkHarborService" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.YorkHarborCms FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
